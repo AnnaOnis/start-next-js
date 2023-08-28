@@ -4,6 +4,7 @@ import styles from './Header.module.css';
 const pages = [
     {href:'/', name:'Home'},
     {href:'/about', name:'About'},
+    {href:'/todos', name:'My ToDoList'},
 ];
 
 export default function Header(){

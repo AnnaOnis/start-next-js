@@ -1,0 +1,32 @@
+.deleteButton{
+	padding: 1px 5px;
+	border-radius: 6px;
+	background-color: red;
+	font-size: 15px;
+	color: #fff;
+  float: right;
+}
+.list, .inputTodo{
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.list{
+  width: 300px;
+}
+.item{
+  margin: 5px;
+}
+.title{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.inputForm{
+  background-color: #abe5ed;
+}
+
+.todoList{
+  background-color: #f7f49e;
+}
