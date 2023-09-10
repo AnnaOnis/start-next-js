@@ -5,11 +5,12 @@ const pages = [
     {href:'/', name:'Home'},
     {href:'/about', name:'About'},
     {href:'/todos', name:'My ToDoList'},
+    {href:'/users', name:'Users'},
 ];
 
 export default function Header(){
     return <><header>
-        <nav>
+        <nav className={styles.nav}>
             <ul>
                 {pages.map(({href, name})=>
                 <li key={href}>
