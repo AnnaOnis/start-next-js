@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import TableButtons from "../TableButtons";
 
 export default function Users(){
     const
@@ -11,7 +12,6 @@ export default function Users(){
                 const response = await fetch('https://jsonplaceholder.typicode.com/users');
                 if(!response.ok) throw new Error('fetch '+ response.status);
                 setUsers(await response.json());
-
             }catch(err)
             {
                 setError(err);
@@ -28,7 +28,13 @@ export default function Users(){
               <tbody>
                 {users.map(user=> 
                 <tr key={user.id}>
-                    <td>{user.name}</td><td>{user.email}</td><td>{user.address.city}</td><td>{user.phone}</td><td>{user.website}</td><td>{user.company.name}</td>
+                    <td>{user.name}</td>
+                    <td>{user.email}</td>
+                    <td>{user.address.city}</td>
+                    <td>{user.phone}</td>
+                    <td>{user.website}</td>
+                    <td>{user.company.name}</td>
+                    <td><TableButtons del={()=>setUsers(users.filter(us=>us.id != user.id))}/></td>
                 </tr>)}
               </tbody>  
             </>

@@ -5,3 +5,18 @@ body{
 main{
     margin: 0.5em;
 }
+
+table {
+    border-collapse: collapse;
+    border: 3px solid grey;
+    width: 1000px;
+ }
+
+ th, td {
+    border: 1px solid grey;
+    padding: 10px 15px;
+    background-color:rgba(171, 248, 215, 0.833);
+ }
+ th{
+    background-color:rgba(50, 221, 147, 0.833);
+ }
