@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 
 const pages = [
     {href:'/', name:'Home'},
-    {href:'/about', name:'About'},
+    {href:'/calendar', name:'Calendar'},
     {href:'/todos', name:'My ToDoList'},
     {href:'/users', name:'Users'},
     {href:'/users_from_db', name:'UsersFromDB'},
