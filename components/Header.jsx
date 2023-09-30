@@ -6,6 +6,7 @@ const pages = [
     {href:'/about', name:'About'},
     {href:'/todos', name:'My ToDoList'},
     {href:'/users', name:'Users'},
+    {href:'/users_from_db', name:'UsersFromDB'},
 ];
 
 export default function Header(){
